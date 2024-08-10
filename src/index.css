@@ -1,0 +1,9 @@
+body {
+  margin: 0px;
+}
+
+html,
+body,
+div#root {
+  height: 100vh;
+}

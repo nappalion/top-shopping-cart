@@ -1,0 +1,19 @@
+.container {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  height: 450px;
+  object-fit: cover;
+}
+
+.boxLinkContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+  flex: 1;
+}
