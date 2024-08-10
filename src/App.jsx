@@ -8,7 +8,7 @@ const links = [
   { text: "Shop", path: "shop" },
 ];
 
-const components = [<SearchBar />];
+const components = [<SearchBar onSearch={() => console.log("test")} />];
 
 function App() {
   return (

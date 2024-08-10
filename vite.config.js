@@ -18,6 +18,11 @@ export default defineConfig({
       include: "**/*.svg",
     }),
   ],
+  test: {
+    globals: true,
+    environment: "jsdom",
+    setupFiles: "./tests/setup.js",
+  },
   resolve: {
     alias: {
       "@src": path.resolve(__dirname, "./src/"),
