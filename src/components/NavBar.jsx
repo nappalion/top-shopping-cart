@@ -14,7 +14,7 @@ function NavBar({ logo, links, components }) {
               {link.text}
             </Link>
           ))}
-        <div>
+        <div className={styles.iconContainer}>
           {components &&
             components.map((component, index) => (
               <div key={index}>{component}</div>
