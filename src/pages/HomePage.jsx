@@ -14,9 +14,9 @@ function HomePage() {
       </picture>
 
       <div className={styles.boxLinkContainer}>
-        <BoxLink imageUrl={menUrl} text="MEN" />
-        <BoxLink imageUrl={accessoriesUrl} text="ACCESSORIES" />
-        <BoxLink imageUrl={womenUrl} text="WOMEN" />
+        <BoxLink imageUrl={menUrl} text="MEN" link={"shop"} />
+        <BoxLink imageUrl={accessoriesUrl} text="ACCESSORIES" link={"shop"} />
+        <BoxLink imageUrl={womenUrl} text="WOMEN" link={"shop"} />
       </div>
     </div>
   );

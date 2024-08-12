@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import NavBar from "@src/components/NavBar";
-import logoUrl from "@src/assets/images/logo.jpg";
+import logoUrl from "@src/assets/images/logo.png";
 import SearchBar from "@src/components/SearchBar.jsx";
 
 const links = [
