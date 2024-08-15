@@ -34,12 +34,12 @@ describe("SearchBar component", () => {
 
     const button = screen.getByRole("button");
     button.focus();
-    await userEvent.click(button, "{enter}");
+    await user.click(button, "{enter}");
     expect(mockFn).not.toHaveBeenCalled();
 
     const input = screen.getByRole("textbox");
-    await userEvent.type(input, "test query");
-    await userEvent.click(button, "{enter}");
+    await user.type(input, "test query");
+    await user.click(button, "{enter}");
     expect(mockFn).toHaveBeenCalled();
   });
 
