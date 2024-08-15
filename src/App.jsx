@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 import NavBar from "@src/components/NavBar";
 import logoUrl from "@src/assets/images/logo.png";
 import UserIcon from "@src/assets/icons/user-fill.svg";
@@ -13,6 +13,7 @@ const links = [
 ];
 
 function App() {
+  const navigate = useNavigate();
   const [cartQuantity, setCartQuantity] = useState(0);
 
   const components = [
@@ -22,6 +23,7 @@ function App() {
       Svg={ShoppingCartIcon}
       altText="User"
       notificationCount={cartQuantity}
+      onClick={() => navigate("/cart")}
     />,
   ];
 

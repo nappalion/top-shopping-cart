@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: solid 1px;
+  border-color: #a0a0a0;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.rightContainer {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  padding-left: 20px;
+}
+
+.itemName {
+  flex: 0 0 30%;
+  margin: 0;
+  font-weight: normal;
+  font-size: 25px;
+}
+
+.price {
+  flex: 0 0 70%;
+  text-align: right;
+  margin: 0;
+}
+
+.actionFooter {
+  display: flex;
+  flex: 0 0 100%;
+  align-items: flex-end;
+}
+
+.button {
+  font-weight: bold;
+  text-decoration: underline;
+  background: none;
+  border: none;
+  margin-left: 20px;
+}
+
+.img {
+  height: 300px;
+}
+
+.select {
+  border: none;
+}
