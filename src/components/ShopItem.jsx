@@ -1,8 +1,7 @@
-import testUrl from "@src/assets/images/test.jpg";
 import styles from "./ShopItem.module.css";
 import { useState } from "react";
 
-function ShopItem({ name, price, onClick, onQuickShop }) {
+function ShopItem({ name, imageUrl, price, onClick, onQuickShop }) {
   const [isOverlay, setIsOverlay] = useState(false);
 
   return (
@@ -22,7 +21,7 @@ function ShopItem({ name, price, onClick, onQuickShop }) {
           setIsOverlay(false);
         }}
       >
-        <img className={styles.img} src={testUrl} />
+        <img className={styles.img} src={imageUrl} />
 
         {isOverlay && (
           <>
@@ -40,7 +39,7 @@ function ShopItem({ name, price, onClick, onQuickShop }) {
         )}
       </div>
       <p className={styles.text}>{name}</p>
-      <p className={styles.text}>{price}</p>
+      <p className={styles.text}>${price}</p>
     </div>
   );
 }

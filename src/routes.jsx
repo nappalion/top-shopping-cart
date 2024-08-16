@@ -20,7 +20,7 @@ const routes = [
         element: <CartPage />,
       },
       {
-        path: "shop",
+        path: "shop/:category",
         element: <ShopPage />,
       },
       {
